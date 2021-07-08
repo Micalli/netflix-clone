@@ -1,5 +1,5 @@
 import React from 'react';
-import './FeatureMovie.css'
+import './style.css'
 
 export default ({item}) =>{
 
@@ -8,6 +8,8 @@ export default ({item}) =>{
     for(let i in item.genres){
         genres.push(item.genres[i].name)
     }
+
+   
 
     return(
         <section className="featured"  style={{
