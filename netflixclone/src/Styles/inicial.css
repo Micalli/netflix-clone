@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #0071eb;
+}
+
+body {
+  overflow-x: hidden;
+}
+.bg {
+  height: 126vh;
+  width: 100vw;
+  position: absolute;
+}
+li {
+  list-style: none;
+}
+
+.header img {
+  height: 45px;
+  margin-top: 21px;
+  margin-left: 27px;
+  position: absolute;
+}
+
+.gradient {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+
+  flex-direction: column;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 460px;
+  height: 680px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  position: absolute;
+}
+
+span,
+label {
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+.content {
+  margin: 60px 68px 40px;
+  position: absolute;
+}
+
+.title--singin {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form > div > input {
+  border: solid 0px;
+  border-radius: 5px;
+  background-color: #333;
+  font-size: 16px;
+  padding: 0px 20px 0;
+  color: #fff;
+}
+
+.input--login {
+  font-size: 16px;
+  padding-top: 20px;
+  margin: 0px 0;
+  width: 100%;
+  height: 50px;
+  transition: all ease 0.1s;
+}
+.label-login {
+  font-size: 16px;
+  position: relative;
+  color: #757575;
+  transition: all ease 0.1s;
+  bottom: 35px;
+  left: 20.7px;
+}
+.label-senha {
+  font-size: 16px;
+  position: relative;
+  color: #757575;
+  transition: all ease 0.1s;
+  bottom: 35px;
+  left: 20.7px;
+}
+.input--login:focus-visible {
+  background-color: #454545;
+  outline: none;
+}
+
+.input--login:focus-visible + .label-login {
+  font-size: 11px;
+  bottom: 51px;
+}
+.input--login:not() + .label-login {
+  font-size: 11px;
+  bottom: 508px;
+}
+
+.input--login:focus-visible + .label-senha {
+  font-size: 11px;
+  bottom: 51px;
+}
+
+.label-login.active {
+    font-size: 11px;
+    bottom: 51px;
+  }
+  
+  .label-senha.active {
+    font-size: 11px;
+    bottom: 51px;
+  }
+
+.rememberme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Esconder o checkbox padrão */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Criar o checkbox customizado */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #737373;
+  border-radius: 2px;
+}
+
+/* Criar o ícone de check, escondido quando não estiver selecionado */
+.container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 1px;
+  width: 3px;
+  height: 8px;
+  border: solid black;
+  color: #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Exibir o ícone quando selecionado */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.remember-me{
+  margin: 0px 85px 0 0;
+}
+.container div:hover{
+  text-decoration: none;
+}
+.button--singin {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.button {
+  width: 100%;
+  height: 48px;
+  padding: 16px;
+  border-radius: 4px;
+  border: solid 0px;
+  color: #fff;
+  background-color: #e50914;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.connect-face {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.facebook--ico {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.connect--face--color {
+  color: #737373;
+}
+.singup--now {
+  margin-top: 30px;
+  color: #737373;
+}
+.singup {
+  color: #fff;
+
+}
+.singup:hover {
+  color: #fff;
+  text-decoration:underline;
+  
+}
+
+.terms {
+  margin-top: 15px;
+  width: 300px;
+}
+.terms-of--use {
+  color: #8c8c8c;
+}
+
+.terms-of--use a:hover {
+  text-decoration:underline;
+
+}
+.footer {
+  position: absolute;
+  top: 938px;
+  height: 258px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #757575;
+}
+.footer div > p > a {
+  color: #757575;
+
+}
+
+.footer div > p > a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+
+.footer div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 24vw;
+  font-size: 16px;
+}
+.footer ul {
+  min-width: 800px;
+  font-size: 13px;
+
+  margin: 0 24vw;
+
+  display: flex;
+}
+
+.footer li {
+  margin-right: 130px;
+  margin-bottom: 15px;
+}
+.footer ul li a {
+  color: #757575;
+}
+.footer ul li a:hover {
+    text-decoration: underline;
+  }
+.item--list {
+  position: relative;
+  left: -15px;
+}
+
+select {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #000;
+  width: 138px;
+  height: 48px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  color: #757575;
+  padding-left: 48px;
+  margin: 30px 24vw;
+}
+.footer img {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 25vw;
+
+  width: 15px;
+  position: absolute;
+  left: -4px;
+  top: 185px;
+}
+
+.rememberme span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+
+}

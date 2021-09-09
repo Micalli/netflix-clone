@@ -79,15 +79,6 @@ export default{
                     info=null;
                 break; 
                 
-                /* case 'movie':
-                    info = await basicFecth(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`);
-                break;
-                 case 'tv':
-                    info = await basicFecth(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`);
-                break;
-                default:
-                    info = null;
-                break;*/ 
             }
         }
 
